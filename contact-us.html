@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+         margin: 0;
+            padding: 0; /*Set to 0 to remove default spacing around the body element, ensuring consistent layout.*/
+            font-family: Arial, sans-serif;/*specify the font type "arial" */
+            background-image: url('images/coffee-image.jpg');/*my image background Url*/
+            background-size: cover;/*Ensures the image covers the entire background, maintaining aspect ratio.*/
+            background-repeat: no-repeat;/*Prevents the image from repeating.*/
+            background-attachment: fixed;/*Fixes the background image, so it doesn’t scroll with the content.*/
+            color: rgb(0, 0, 0); /*Sets the text color to black */
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0);/*Adds a subtle shadow to the text (1px x-offset, 1px y-offset, 5px blur radius) with no visible shadow color .*/
+        }
+
+        header {
+            color: white; 
+            background-color: rgba(0, 0, 0, 0);/*Makes the header background fully transparent.*/
+            padding: 20px;/*Adds space inside the header.*/
+            text-align: center;/*Centers the content horizontally.*/
+        }
+
+        nav {
+            background-color: #ffffff00;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;/*Adds vertical spacing inside the navigation bar.*/
+        }
+
+        nav a {
+            color: white;/*Makes link text white.*/
+            text-decoration: none;/*Removes default underline styling.*/
+            margin: 0 15px;/*Adds horizontal space between links*/
+            font-weight: bold;/*Makes the text bold.*/
+            font-size: 1.2em;/*Increases font size for better visibility.*/
+        }
+
+        nav a:hover {
+            text-decoration: underline;/*Adds an underline when the user hovers over a link.*/
+        }
+
+        .container {
+            padding: 20px;/*Adds a 20-pixel padding around the content inside the .container, creating space between the content and the edges of the container.*/
+            text-align: center;/*Centers all text content inside the .container.*/
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.315);/*Sets the form’s background to white for contrast against the page background.*/
+            padding: 20px auto ;/* Adds space inside the form, ensuring content doesn’t touch the edges.*/
+            margin: 20px auto;/*Centers the form horizontally (auto for left and right margins) and adds 20 pixels of vertical spacing.*/
+            width: 80%;/*Sets the form's width to 80% of the parent container, making it responsive.*/
+            max-width: 400px;/*Ensures the form doesn’t grow larger than 400 pixels, even on wider screens.*/
+            border-radius: 8px;/*Rounds the corners of the form for a smoother, modern look.*/
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);/*Adds a subtle shadow effect for depth, making the form look slightly elevated.*/
+        }
+
+        form label {
+            display: block;/*Makes each label appear on its own line, ensuring proper alignment*/   
+            margin-bottom: 5px;/*Adds space between the label and the input field for better readability.*/
+            font-weight: bold;/*Makes the label text bold, emphasizing it for clarity.*/
+            color: white;
+        }
+
+        form input,
+        form textarea,
+        form button {
+            width: 90%;/*Ensures that inputs, textareas, and buttons stretch to fill the available width of the form.*/
+            margin-bottom: 15px;/*Adds spacing between form elements for better layout.*/
+            padding: 10px;/*Adds internal spacing, making elements easier to interact with.*/
+            border: 1px solid #ffffff;/*Applies a black border to form elements for a subtle decorative effect.*/
+            border-radius: 5px;/*Slightly rounds the corners for a softer appearance.*/
+            font-size: 14px;/*Sets a legible font size for input text.*/
+            background-color: #0000003b;/*Sets the button’s background to a BLACK color.*/
+            color: rgb(245, 245, 245);/*Makes the button text white for contrast against the brown background.*/
+            border: none;/*Removes any default border for a cleaner look.*/
+            cursor: pointer;/*Changes the cursor to a pointer when hovering over the button, indicating it is clickable.*/
+        }
+
+        form button:hover {
+            background-color: #80461b;/*Changes the button background to a slightly lighter shade of brown when hovered over, providing visual feedback to the user.*/
+        }
+
+        footer {
+            text-align: center;/*Centers the footer text horizontally.*/
+            padding: 10px;/*Adds space inside the footer.*/
+            background-color: rgba(0, 0, 0, 0.7);/*Applies a semi-transparent black background for the footer.*/
+            color: white;/*Makes the text white for readability.*/
+            position: fixed;/*Keeps the footer always visible at the bottom of the screen.*/
+            bottom: 0;/*Anchors the footer to the very bottom.*/
+            width: 100%;/*Ensures the footer spans the entire width of the screen.*/
+        }
+        h2 { color: rgb(255, 255, 255)/*sets the text color of the <h2> elements to white.*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <nav>
+        <a href="HOME.html">Home</a>
+        <a href="coffee_menu.html">Menu</a>
+        <a href="contact-us.html">Contact Us</a>
+        
+    </nav>
+    <div class="container">
+        <h2>We'd love to hear from you!</h2>
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2025 Espresso Escape Coffee. All rights reserved to (Khaled Alchalati).
+    </footer>
+</body>
+
+</html>

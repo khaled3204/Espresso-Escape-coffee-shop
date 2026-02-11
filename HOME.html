@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0; /*Set to 0 to remove default spacing around the body element, ensuring consistent layout.*/
+            font-family: Arial, sans-serif;/*specify the font type "arial" */
+            background-image: url('images/coffee-image.jpg');/*my image background Url*/
+            background-size: cover;/*Ensures the image covers the entire background, maintaining aspect ratio.*/
+            background-repeat: no-repeat;/*Prevents the image from repeating.*/
+            background-attachment: fixed;/*Fixes the background image, so it doesn’t scroll with the content.*/
+            color: white; /*Sets the text color to white */
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0);/*Adds a subtle shadow to the text (1px x-offset, 1px y-offset, 5px blur radius) with no visible shadow color .*/
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0);/*Makes the header background fully transparent.*/
+            padding: 20px;/*Adds space inside the header.*/
+            text-align: center;/*Centers the content horizontally.*/
+        }
+
+        header h1 {
+            font-size: 3em;/*Sets the font size to a large scale.*/
+            margin: 0;/*Removes any default margins around the heading.*/
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0);/*Transparent background for the navigation area.*/
+            text-align: center;/*Centers navigation links horizontally.*/
+            padding: 10px 0;/*Adds vertical spacing inside the navigation bar.*/
+        }
+
+        nav a {
+            color: white;/*Makes link text white.*/
+            text-decoration: none;/*Removes default underline styling.*/
+            margin: 0 15px;/*Adds horizontal space between links*/
+            font-weight: bold;/*Makes the text bold.*/
+            font-size: 1.2em;/*Increases font size for better visibility.*/
+        }
+
+        nav a:hover {
+            text-decoration: underline;/*Adds an underline when the user hovers over a link.*/
+        }
+
+        .content {
+            text-align: center;/*Centers the content horizontally.*/
+            padding: 50px 20px;/*Adds space inside the container.*/
+            background-color: rgba(0, 0, 0, 0.5);/*Creates a semi-transparent black background to make the text easier to read.*/
+            margin: 20px;/*Adds space around the section.*/
+            border-radius: 10px;/*Rounds the corners of the section.*/
+        }
+
+        .content h2 {
+            font-size: 2.5em;/*Sets a large font size for the title.*/
+            margin-bottom: 20px;/*Adds spacing below the title.*/
+        }
+
+        .content p {
+            font-size: 1.2em;/*Makes the text slightly larger than default for readability.*/
+            line-height: 1.8;/* Increases line spacing for better legibility.*/
+        }
+
+        footer {
+            text-align: center;/*Centers the footer text horizontally.*/
+            padding: 10px;/*Adds space inside the footer.*/
+            background-color: rgba(0, 0, 0, 0.7);/*Applies a semi-transparent black background for the footer.*/
+            color: white;/*Makes the text white for readability.*/
+            position: fixed;/*Keeps the footer always visible at the bottom of the screen.*/
+            bottom: 0;/*Anchors the footer to the very bottom.*/
+            width: 100%;/*Ensures the footer spans the entire width of the screen.*/
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝑬𝒔𝒑𝒓𝒆𝒔𝒔𝒐 𝑬𝒔𝒄𝒂𝒑𝒆 𝑪𝒐𝒇𝒇𝒆𝒆 𝑺𝒉𝒐𝒑</h1>
+    </header>
+    <nav>
+        <a href="HOME.html">Home</a>
+        <a href="coffee_menu.html">Menu</a>
+        <a href="contact-us.html">Contact Us</a>
+    </nav>
+    <div class="content">
+        <h2>About Us</h2>
+        <p>
+            At Espresso Escape Coffee Shop, we are passionate about crafting the perfect cup of coffee. Located in the heart of
+            the city, our cozy shop offers a warm and inviting atmosphere where you can relax and savor every sip.
+        </p>
+        <p>
+            Our baristas are experts in their craft, using only the finest beans and freshest ingredients to create a
+            menu full of rich, flavorful beverages. Whether you're here for a quick espresso, a creamy latte, or a
+            decadent mocha, you'll find something to love at Espresso Escape Coffee Shop.
+        </p>
+        <p>
+            Stop by and let the aroma of freshly brewed coffee and the charm of our ambiance make your day brighter.
+        </p>
+    </div>
+    <footer>
+        &copy; 2025 Espresso Escape Coffee Shop. All rights reserved to (Khaled Alchalati).
+    </footer>
+</body>
+
+</html>

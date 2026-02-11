@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espresso Details</title>
+    <style>
+        body {
+            background-image: url('../images/coffee-image.jpg');/*my image background Url*/
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .card {
+            width: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc;
+            background-color: #ffffff5e;
+        }
+
+        .card-header {
+            background-color: #000000;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        .card-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card-content .content h2 {
+            margin: 10px 0 5px;
+        }
+
+        .card-content .content p,
+        .card-content .content ul {
+            text-align: left;
+            margin: 10px 0;
+        }
+
+        .card-content ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white; /* Default color is white */
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: black; /* Changes to black on hover */
+             text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-header">Espresso</div>
+        <div class="card-content">
+            <img src="../images\espresso.png" alt="Espresso">
+            <div class="content">
+                <h2>Description</h2>
+                <p>Strong and bold, a coffee lover's classic. Made by forcing hot water through finely-ground coffee
+                    beans.</p>
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>Freshly ground coffee beans</li>
+                    <li>Hot water</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p><a href="../coffee_menu.html">Back to Menu</a></p>
+    </footer>
+</body>
+
+</html>

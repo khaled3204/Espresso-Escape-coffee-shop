@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Menu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0; /*Set to 0 to remove default spacing around the body element, ensuring consistent layout.*/
+            font-family: Arial, sans-serif;/*specify the font type "arial" */
+            background-image: url('images/coffee-image.jpg');/*my image background Url*/
+            background-size: cover;/*Ensures the image covers the entire background, maintaining aspect ratio.*/
+            background-repeat: no-repeat;/*Prevents the image from repeating.*/
+            background-attachment: fixed;/*Fixes the background image, so it doesn’t scroll with the content.*/
+            color: white; /*Sets the text color to white */
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0);/*Adds a subtle shadow to the text (1px x-offset, 1px y-offset, 5px blur radius) with no visible shadow color .*/
+            
+        }
+        header {
+            color: rgb(255, 255, 255); 
+            background-color: rgba(255, 255, 255, 0);/*Makes the header background fully transparent.*/
+            padding: 20px;/*Adds space inside the header.*/
+            text-align: center;/*Centers the content horizontally.*/
+        }
+        nav {
+            background-color: #fdfdfd00;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;/*Adds vertical spacing inside the navigation bar.*/
+        }
+        nav a {
+            color: white;/*Makes link text white.*/
+            text-decoration: none;/*Removes default underline styling.*/
+            margin: 0 15px;/*Adds horizontal space between links*/
+            font-weight: bold;/*Makes the text bold.*/
+            font-size: 1.2em;/*Increases font size for better visibility.*/
+        }
+        nav a:hover {
+            text-decoration: underline;/*Adds an underline when the user hovers over a link.*/
+        }
+        .container {
+            padding: 20px;/*Adds a 20-pixel padding around the content inside the .container, creating space between the content and the edges of the container.*/
+            text-align: center;/*Centers all text content inside the .container.*/
+        }
+        table {
+            margin: 20px auto;/*Centers the table horizontally (auto on the left and right margins) and adds a 20-pixel margin above and below it.*/
+            border-collapse: collapse;/*Merges adjacent borders of table cells into a single border, creating a cleaner look.*/
+            width: 80%;/*Sets the table's width to 80% of the parent container's width, ensuring it is responsive and doesn't take up the full width of the page.*/
+            background-color: rgba(37, 29, 29, 0.404);/*Sets a semi-transparent background color (dark brown) for the table.(red/green/blue/semi transparent)*/
+        }
+        .click-here {
+            color: white; /* Set the text color to white */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Make it bold */
+            margin-left: 10px; /* Add some space between the coffee name and the "Click here" text */
+        }
+
+        /* Hover effect for the "Click here" text */
+        .click-here:hover {
+            color: blue; /* Change the color to blue on hover */
+            text-decoration: underline; /* Underline the text when hovered */
+        }
+        th, td {
+            border: 1px solid #ddd;/*Adds a 1-pixel solid border with a light gray color (#ddd) around each cell.*/
+            padding: 10px;/*Adds a 1-pixel solid border with a light gray color (#ddd) around each cell.*/
+            text-align: left;/*Aligns text to the left within each cell*/
+        }
+        th {
+            background-color: #000000;/*Sets the background color of table header cells (th) to black.*/
+            color: white;/*Sets the text color inside header cells to white, ensuring good contrast against the black background.*/
+        }
+        footer {
+            text-align: center;/*Centers the footer text horizontally.*/
+            padding: 10px;/*Adds space inside the footer.*/
+            background-color: rgba(0, 0, 0, 0.7);/*Applies a semi-transparent black background for the footer.*/
+            color: white;/*Makes the text white for readability.*/
+            position: fixed;/*Keeps the footer always visible at the bottom of the screen.*/
+            bottom: 0;/*Anchors the footer to the very bottom.*/
+            width: 100%;/*Ensures the footer spans the entire width of the screen.*/
+        }
+        h2{ color: rgb(255, 255, 255)/*sets the text color of the <h2> elements to white.*/
+
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝑬𝒔𝒑𝒓𝒆𝒔𝒔𝒐 𝑬𝒔𝒄𝒂𝒑𝒆 𝑪𝒐𝒇𝒇𝒆𝒆 𝑺𝒉𝒐𝒑</h1>
+    </header>
+    <nav>
+        <a href="HOME.html">Home</a>
+        <a href="coffee_menu.html">Menu</a>
+        <a href="contact-us.html">Contact Us</a>
+        
+    </nav>
+    <div class="container">
+        <h2>Our Coffee Menu</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Coffee</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                 <tr>
+                    <td>Espresso</td>
+                    <td>Strong and bold, a coffee lover's classic. <a href="coffee_list/Espresso.html" class="click-here">(click here)</a></td>
+                    <td>$2.50</td>
+                </tr>
+                 <tr>
+                    <td>Latte</td>
+                    <td>Rich espresso with steamed milk. <a href="coffee_list/Latte.html" class="click-here">(click here)</a></td>
+                    <td>$3.50</td>
+                </tr>
+                <tr>
+                    <td>Cappuccino</td>
+                    <td>Espresso, steamed milk, and foam in harmony. <a href="coffee_list/Cappuccino.html" class="click-here">(click here)</a></td>
+                    <td>$3.00</td>
+                </tr>
+                <tr>
+                    <td>mocha</td>
+                    <td>Espresso with chocolate and steamed milk. <a href="coffee_list/Mocha.html" class="click-here">(click here)</a></td>
+                    <td>$4.00</td>
+                </tr>
+                <tr>
+                    <td>Americano</td>
+                    <td>Espresso with hot water for a milder taste. <a href="coffee_list/Americano.html" class="click-here">(click here)</a></td>
+                    <td>$2.00</td>
+                </tr>
+                <tr>
+                    <td>Macchiato</td>
+                    <td>Espresso with a dollop of steamed milk foam. <a href="coffee_list/Macchiato.html" class="click-here">(click here)</a></td>
+                    <td>$3.00</td>
+                </tr>
+                <tr>
+                    <td>Flat White</td>
+                    <td>Velvety steamed milk over a double shot of espresso. <a href="coffee_list/Flat_White.html" class="click-here">(click here)</a></td>
+                    <td>$3.75</td>
+                </tr>
+                <tr>
+                    <td>Affogato</td>
+                    <td>A scoop of vanilla ice cream topped with hot espresso. <a href="coffee_list/Affogato.html" class="click-here">(click here)</a></td>
+                    <td>$4.50</td>
+                </tr>
+                <tr>
+                    <td>Cold Brew</td>
+                    <td>Smooth, chilled coffee steeped for hours. <a href="coffee_list/Cold_brew.html" class="click-here">(click here)</a></td>
+                    <td>$3.50</td>
+                </tr>
+                <tr>
+                    <td>Nitro Cold Brew</td>
+                    <td>Cold brew infused with nitrogen for a creamy texture. <a href="coffee_list/Nitro_Cold_Brew.html" class="click-here">(click here)</a></td>
+                    <td>$4.25</td>
+                </tr>
+                <tr>
+                    <td>Turkish Coffee</td>
+                    <td>Strong, rich, unfiltered, with a smooth finish. <a href="coffee_list/Turkish_Coffee.html" class="click-here">(click here)</a></td>
+                    <td>3.50</td>
+                </tr>
+            
+                <tr>
+                    <td>Water</td>
+                    <td>A fancy water served in a bottle of glass <a href="coffee_list/Water.html" class="click-here">(click here)</a></td>
+                    <td>1$</td>
+                </tr>
+              
+          
+                  
+                  
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        &copy; 2025 Espresso Escape Coffee. All rights reserved to (Khaled Alchalati).
+    </footer>
+</body>
+</html>
